@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilma Tarra Realty - Your Trusted Real Estate Partner</title>
+    <meta name="description" content="Find your dream home in the Philippines with Vilma Tarra Realty. Premium properties with personalized service across Metro Manila and key provincial locations.">
+    <meta name="keywords" content="real estate, Philippines, property, home for sale, condo, house and lot, Vilma Tarra">
+
+    <!-- Logo Loader with Animated Circle -->
+    <style>
+        #site-loader {
+            position: fixed;
+            z-index: 99999;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: linear-gradient(120deg, #f2f1ee 70%, #fffbe9 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s;
+        }
+        #site-loader.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .logo-loader-container {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-loader-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 24px #c2a77633;
+            position: relative;
+            z-index: 2;
+            background: #fff;
+        }
+        .logo-loader-circle {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 150px;
+            height: 150px;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .logo-loader-svg {
+            width: 150px;
+            height: 150px;
+            display: block;
+        }
+        .logo-loader-svg circle {
+            fill: none;
+            stroke: #C2A776;
+            stroke-width: 8;
+            stroke-linecap: round;
+            stroke-dasharray: 439.82;
+            stroke-dashoffset: 329.86;
+            /* 75% of circle is visible, rest is gap */
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            animation: logo-circle-spin 1.2s linear infinite;
+            filter: drop-shadow(0 2px 12px #c2a77655);
+        }
+        @keyframes logo-circle-spin {
+            0% {
+                stroke-dashoffset: 329.86;
+                transform: rotate(-90deg);
+            }
+            50% {
+                stroke-dashoffset: 109.96;
+                transform: rotate(270deg);
+            }
+            100% {
+                stroke-dashoffset: 329.86;
+                transform: rotate(630deg);
+            }
+        }
+    </style>
+    <script>
+        // Hide loader after page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const loader = document.getElementById('site-loader');
+                if (loader) {
+                    loader.classList.add('hide');
+                    setTimeout(() => loader.style.display = 'none', 600);
+                }
+            }, 700); // Show loader at least 700ms for effect
+        });
+    </script>
+    <div id="site-loader" aria-label="Loading">
+        <div class="logo-loader-container">
+            <img src="Vilma Tarra Real Estate.jpg" alt="Vilma Tarra Realty Logo" class="logo-loader-img" width="120" height="120" />
+            <span class="logo-loader-circle">
+                <svg class="logo-loader-svg" viewBox="0 0 150 150">
+                    <circle cx="75" cy="75" r="70"/>
+                </svg>
+            </span>
+        </div>
+    </div>
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" as="image">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Vilma Tarra Real Estate.jpg" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset with improved defaults */
+        :root {
+            --primary-color: #C2A776;
+            --primary-dark: #A58E5E;
+            --secondary-color: #F2F1EE;
+            --dark-color: #1D1D1D;
+            --text-color: #1D1D1D;
+            --light-text: #F2F1EE;
+            --border-radius: 0.5rem;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            overflow-x: hidden;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        button, input, select, textarea {
+            font-family: inherit;
+        }
+        
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--dark-color);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--dark-color);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--dark-color);
+            padding: 1rem 2rem;
+            color: var(--light-text);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 0.8s ease-out;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav a {
+            color: var(--light-text);
+            margin-left: 1.5rem;
+            font-weight: 600;
+            transition: var(--transition);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--light-text);
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 6rem 2rem;
+            background: linear-gradient(rgba(29, 29, 29, 0.9), rgba(29, 29, 29, 0.9)), 
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+            color: var(--light-text);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        .hero .container {
+            max-width: 1000px;
+        }
+        
+        .hero h2 {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: clamp(1.8rem, 4vw, 2.2rem);
+            color: var(--dark-color);
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            color: #555;
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+        }
+        
+        /* Properties Section */
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--primary-color);
+            color: var(--dark-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 1;
+        }
+        
+        .card-img-container {
+            position: relative;
+            overflow: hidden;
+            height: 220px;
+        }
+        
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card-content h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: var(--dark-color);
+        }
+        
+        .price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+        
+        .card-content p.location {
+            color: #555;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .card-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .card-features span {
+            background: rgba(194, 167, 118, 0.1);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .card-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .card-actions .btn {
+            flex: 1;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .card-actions .btn-outline {
+            border-color: #ddd;
+        }
+        
+        /* About Section */
+        .about-section {
+            background: #e9ecef;
+        }
+        
+        .about-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-img {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .about-content h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: var(--dark-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-content p {
+            margin-bottom: 1.5rem;
+            color: #444;
+            line-height: 1.7;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-item .number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.25rem;
+        }
+        
+        .stat-item .label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+        
+        .service-card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: #f1f8ff;
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .testimonial-text {
+            font-size: 1.1rem;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            quotes: '"' '"' "'" "'";
+        }
+        
+        .testimonial-text::before {
+            content: open-quote;
+            font-size: 2rem;
+            color: var(--primary-color);
+            opacity: 0.3;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+        }
+        
+        .testimonial-text::after {
+            content: close-quote;
+            font-size: 2rem;
+            color: var(--primary-color);
+            opacity: 0.3;
+            position: absolute;
+            right: -10px;
+            bottom: -20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            color: var(--dark-color);
+            margin-bottom: 0.25rem;
+        }
+        
+        .author-info p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Testimonial dots */
+        .testimonial-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            gap: 0.5rem;
+        }
+        
+        .testimonial-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .testimonial-dot.active {
+            background: var(--primary-color);
+            transform: scale(1.2);
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 0.25rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-text h4 {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-text p,
+        .contact-text a {
+            color: #555;
+            font-size: 1rem;
+        }
+        
+        .contact-text a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .contact-form h3 {
+            font-size: 1.5rem;
+            color: var(--dark-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #444;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(194, 167, 118, 0.25);
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+            padding: 1rem;
+        }
+        
+        .modal.show {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            width: 100%;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: fadeInUp 0.5s ease-out;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #ccc;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .modal-close:hover {
+            background: #999;
+            color: white;
+        }
+        
+        .modal-property {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .modal-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+        
+        .modal-images img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .modal-images img:hover {
+            opacity: 0.9;
+        }
+        
+        .modal-images img:first-child {
+            grid-column: span 2;
+            height: 200px;
+        }
+        
+        .modal-details h3 {
+            font-size: clamp(1.5rem, 3vw, 1.8rem);
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+        
+        .modal-price {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .modal-description {
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .modal-features {
+            margin-bottom: 1.5rem;
+        }
+        
+        .modal-features h4 {
+            margin-bottom: 0.75rem;
+            color: var(--dark-color);
+        }
+        
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.75rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .feature-item i {
+            color: var(--primary-color);
+        }
+        
+        .modal-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: var(--light-text);
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--primary-color);
+        }
+        
+        .footer-col p {
+            color: #adb5bd;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+        
+        .footer-links i {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #495057;
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+            color: var(--dark-color);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 1px solid #495057;
+            border-radius: var(--border-radius);
+            background: #495057;
+            color: white;
+        }
+        
+        .newsletter-form input::placeholder {
+            color: #adb5bd;
+        }
+        
+        .newsletter-form button {
+            padding: 0 1.5rem;
+            white-space: nowrap;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #495057;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        /* Chatbot */
+        #chatbot {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            background: white;
+            width: 100%;
+            max-width: 350px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        #chatbot.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        #chatbot-header {
+            background-color: var(--dark-color);
+            color: var(--light-text);
+            padding: 1rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        #chatbot-toggle {
+            background: none;
+            border: none;
+            color: var(--light-text);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        #chatbot-messages {
+            flex: 1;
+            padding: 1rem;
+            overflow-y: auto;
+            max-height: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .message {
+            max-width: 80%;
+            padding: 0.75rem 1rem;
+            border-radius: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        
+        .user-message {
+            align-self: flex-end;
+            background: var(--dark-color);
+            color: var(--light-text);
+            border-bottom-right-radius: 0.25rem;
+        }
+        
+        .bot-message {
+            align-self: flex-start;
+            background: rgba(194, 167, 118, 0.1);
+            color: var(--dark-color);
+            border-bottom-left-radius: 0.25rem;
+        }
+        
+        #chatbot-input {
+            display: flex;
+            border-top: 1px solid #ddd;
+            padding: 0.75rem;
+        }
+        
+        #chatbot-input input {
+            flex: 1;
+            border: 1px solid #ddd;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.95rem;
+            outline: none;
+        }
+        
+        #chatbot-input button {
+            background-color: var(--dark-color);
+            border: none;
+            color: var(--light-text);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            margin-left: 0.5rem;
+            transition: var(--transition);
+        }
+        
+        #chatbot-input button:hover {
+            background-color: var(--primary-color);
+            color: var(--dark-color);
+        }
+        
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 5rem;
+            right: 1rem;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: var(--dark-color);
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+        
+        #back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        /* Loading Spinner */
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+        
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: var(--dark-color);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                clip-path: circle(0px at 90% -10%);
+                transition: all 0.5s ease-out;
+                pointer-events: none;
+            }
+        
+            nav.active {
+                clip-path: circle(1500px at 90% -10%);
+                pointer-events: all;
+            }
+        
+            nav a {
+                margin: 0.75rem 0;
+                font-size: 1.2rem;
+            }
+        
+            .mobile-menu-btn {
+                display: block;
+            }
+        
+            .hero {
+                padding: 4rem 1rem;
+            }
+        
+            .modal-actions {
+                flex-direction: column;
+            }
+        
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .section {
+                padding: 3rem 0;
+            }
+        
+            .card-actions {
+                flex-direction: column;
+            }
+        
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="Vilma Tarra Real Estate.jpg" alt="Vilma Tarra Realty Logo" width="40" height="40">
+            <h1>Tarra-Camacho Realty</h1>
+        </div>
+        <nav id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#listings">Listings</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        </header>
+        <script>
+        // Hamburger menu toggle for mobile navigation
+        document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('mainNav');
+        const siteLoader = document.getElementById('site-loader');
+        // Toggle mobile menu
+        menuBtn.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+        // Close mobile menu and loader animation when any nav link is clicked
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+            nav.classList.remove('active');
+            // Hide loader if visible
+            if (siteLoader && !siteLoader.classList.contains('hide')) {
+                siteLoader.classList.add('hide');
+                setTimeout(() => siteLoader.style.display = 'none', 600);
+            }
+            });
+        });
+        });
+        </script>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Find Your Dream Home in the Philippines</h2>
+            <p>Tarra-Camacho Realty offers premium properties across the country with personalized service to meet your needs.</p>
+        </div>
+    </section>
+
+    <!-- Featured Listings -->
+    <section class="section" id="listings">
+        <div class="container">
+            <h2 class="section-title">Featured Listings</h2>
+            <p class="section-subtitle">Explore our selection of premium properties in prime locations across the Philippines</p>
+            <div class="properties-grid">
+                <!-- Card 1 -->
+                <div class="card" role="button" tabindex="0" aria-label="View details for Modern 3BR House" onclick="showPropertyModal(1)">
+                    <div class="card-img-container">
+                        <img src="CDO 1/1.jpg" alt="Modern House" loading="lazy" width="400" height="220">
+                        <span class="card-badge">For Rent</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Spacious Condominium Unit For Rent</h3>
+                        <span class="price">₱50,000 (Negotiable)</span>
+                        <p class="location">Centropolis Communities, Muntinlupa City • 115 sqm • 3 Big Bedrooms</p>
+                        <div class="card-features">
+                            <span><i class="fas fa-bath"></i> 4 Toilet & Bathrooms</span>
+                            <span><i class="fas fa-bed"></i> 3 Big Bedrooms</span>
+                            <span><i class="fas fa-couch"></i> Spacious Living Room</span>
+                            <span><i class="fas fa-car"></i> With Parking</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(1)">View Details</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" role="button" tabindex="0" aria-label="View details for Elegant Family Villa" onclick="showPropertyModal(2)">
+                    <div class="card-img-container">
+                        <img src="HMA 2/1.jpg" alt="HMA" loading="lazy" width="400" height="220">
+                        <span class="card-badge">For Sale</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Property For Sale In Manila (Sold Only As A Lot)</h3>
+                        <span class="price">₱28,000,000 (Negotiable)</span>
+                        <p class="location">Onyx Sta Ana, Manila • 325sqm (2 titles- 162.50 sqm each)</p>
+                        <div class="card-features">
+                            
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(2)">View Details</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" role="button" tabindex="0" aria-label="View details for Luxury Mansion" onclick="showPropertyModal(3)">
+                    <div class="card-img-container">
+                        <img src="THA 3/1.jpg" alt="Tahanan" loading="lazy" width="400" height="220">
+                        <span class="card-badge">For Sale</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Two Storey House for Sale in Tahanan Village, BF Paranaque</h3>
+                        <span class="price">₱26,000,000 (Negotiable)</span>
+                        <p class="location">Tahanan Village, BF Paranaque • Lot area: 280 sqm • Floor area: 250sqm</p>
+                        <div class="card-features">
+                            <span><i class="fas fa-bed"></i> 1 Bedroom With Own Toilet & Bath Downstairs</span>
+                            <span><i class="fas fa-bed"></i> 3 Bedrooms With Own Toilet & Bath Upstairs</span>
+                            <span><i class="fas fa-door-open"></i> Open Den</span>
+                            <span><i class="fas fa-car"></i> 2 Car Parking</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(3)">View Details</button>
+                          
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 (For Rent) -->
+                <div class="card" role="button" tabindex="0" aria-label="View details for Three Story Corner House" onclick="showPropertyModal(4)">
+                    <div class="card-img-container">
+                        <img src="BFA 4/1.jpg" alt="Condominium" loading="lazy" width="400" height="220">
+                        <span class="card-badge">For Rent</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Three Story Corner House in BF Homes, Paranaque City</h3>
+                        <span class="price">₱95,000/month</span>
+                        <p class="location">BF Homes, Paranaque City</p>
+                        <div class="card-features">
+                            <span><i class="fas fa-bed"></i> 6 Bedrooms</span>
+                            <span><i class="fas fa-bath"></i> 5 Toilet & Bath</span>
+                            <span><i class="fas fa-bed"></i> 1 Powder Room</span>
+                            <span><i class="fas fa-car"></i> 2 Car Garage or More Can Fit In The Garage</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(4)">View Details</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card" role="button" tabindex="0" aria-label="View details for Beachfront Property" onclick="showPropertyModal(5)">
+                    <div class="card-img-container">
+                        <img src="LP 5/1.jpg" alt="Beach House" loading="lazy" width="400" height="220">
+                        <span class="card-badge">For Sale</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Duplex for sale in Las Piñas City, near Southville, McDo, and Las Piñas Doctors Hospital.</h3>
+                        <span class="price">₱5,600,000</span>
+                        <p class="location">Las Piñas City • Around 120 sqm Floor Area • Around 70 sqm Lot Area</p>
+                        <div class="card-features">
+                            <span><i class="fas fa-bed"></i> 3 Bedrooms </span>
+                            <span><i class="fas fa-bath"></i> 3 Bathrooms </span>
+                            <span><i class="fas fa-umbrella-beach"></i> Front & Back Terraces </span>
+                            <span><i class="fas fa-tshirt"></i> Laundry Area </span>
+                            <span><i class="fas fa-car"></i> 1 Car Garage </span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(5)">View Details</button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    // Property modal data for each listing
+    const propertyModalData = [
+        {
+            // id: 1
+            images: [
+                "CDO1/1.jpg",
+                "CDO1/2.jpg",
+                "CDO1/3.jpg",
+                "CDO1/4.jpg",
+                "CDO1/5.jpg",
+                "CDO1/6.jpg",
+                "CDO1/7.jpg",
+                "CDO1/8.jpg",
+                "CDO1/9.jpg",
+                "CDO1/10.jpg",
+                "CDO1/11.jpg",
+                "CDO1/12.jpg",
+                "CDO1/13.jpg",
+
+            ],
+            title: "Spacious Condominium Unit For Rent",
+            price: "₱48,000/month (Also For Sale)",
+            description: "This  2-units condominium (merged into one unit) in Muntinlupa City features 115 sqm of space, 3 spacious bedrooms, 4 bathrooms, a large living area, 6 air conditioning units, and includes parking.",
+            features: [
+                { icon: "fas fa-bed", label: "3 Big Bedrooms" },
+                { icon: "fas fa-bath", label: "4 Toilet & Bathrooms" },
+                { icon: "fas fa-ruler-combined", label: "115 sqm Floor Area" },
+                { icon: "fas fa-car", label: "With Parking Included" },
+                { icon: "fas fa-tree", label: "With 6 Aircon Units" },
+                { icon: "fas fa-couch", label: "Spacious Living Room" },
+                { icon: "fas fa-map-marker-alt", label: "Centropolis Communities, Muntinlupa City" }
+            ]
+        },
+        {
+            // id: 2
+images: [
+    "HMA 2/1.jpg","HMA 2/2.jpg"
+],
+            title: "Property For Sale In Manila (Sold Only As A Lot)",
+            price: "₱28,000,000 (Negotiable)",
+            description: "Property for sale in Manila, sold as lot only. Ideal for residential or commercial use. Located in Onyx Sta Ana, Manila, this property spans 325 sqm with two titles of 162.50 sqm each. Perfect for building for commercial or residential purposes.",
+
+            features: [
+                { icon: "fas fa-ruler-combined", label: "325 sqm" },
+                { icon: "fas fa-file-alt", label: "2 Titles of 162.50 sqm each" },
+                { icon: "fas fa-building", label: "Ideal for Residential or Commercial Use" },
+                { icon: "fas fa-map-marker-alt", label: "Onyx Sta Ana, Manila" },
+                { icon: "fas fa-key", label: "Sold Only As A Lot" },
+                { icon: "fas fa-handshake", label: "Negotiable Price" }
+             
+            ]
+        },
+        {
+            // id: 3
+            images: [
+                "THA 3/1.jpg",
+                "THA 3/2.jpg",
+                "THA 3/3.jpg",
+                "THA 3/4.jpg",
+                "THA 3/5.jpg",
+                "THA 3/6.jpg",
+                "THA 3/7.jpg",
+                "THA 3/8.jpg",
+                "THA 3/9.jpg",
+            ],
+            title: "Two Storey House for Sale in Tahanan Village, BF Paranaque",
+            price: "₱26,000,000 (Negotiable)",
+            description: "This spacious home features a ground floor bedroom with its own toilet and bath, three upstairs bedrooms each with own toilet and bath, an open den, maid’s and driver’s rooms both with their own toilets and baths, and covered parking for two cars.",
+            features: [
+                { icon: "fas fa-bed", label: "1 Bedroom with Own Toilet & Bath Downstairs" },
+                { icon: "fas fa-bed", label: "3 Bedrooms with Own Toilet & Bath Upstairs" },
+                { icon: "fas fa-door-open", label: "Open Den" },
+                { icon: "fas fa-user", label: "Maid’s Room with Toilet & Bath" },
+                { icon: "fas fa-user-tie", label: "Driver’s Room with Toilet & Bath" },
+                { icon: "fas fa-car", label: "2 Car Parking" }
+            ]
+        },
+        {
+            // id: 4
+            images: [
+                "BFA 4/1.jpg",
+                "BFA 4/2.jpg",
+                "BFA 4/3.jpg",
+                "BFA 4/4.jpg",
+                "BFA 4/5.jpg",
+                "BFA 4/6.jpg",
+                "BFA 4/7.jpg",
+                "BFA 4/8.jpg",
+                "BFA 4/9.jpg",
+                "BFA 4/10.jpg",
+                "BFA 4/11.jpg",
+                "BFA 4/12.jpg",
+                "BFA 4/13.jpg"
+            ],
+            title: "Three Story Corner House in BF Homes, Paranaque City",
+            price: "₱95,000/month",
+            description: "Three-storey corner house located in BF Homes, Parañaque City with 6 bedrooms, 5 toilets and baths, a den, and 1 powder room. It also has a spacious garage that can fit 2 or more cars.",
+            features: [
+                { icon: "fas fa-bed", label: "6 Bedrooms" },
+                { icon: "fas fa-bath", label: "5 Toilet & Bath" },
+                { icon: "fas fa-city", label: "1 Powder Room" },
+                { icon: "fas fa-dumbbell", label: "2 Car Garage or More Can Fit In The Garage" },
+                { icon: "fas fa-home", label: "Three Story Corner House" },
+                { icon: "fas fa-map-marker-alt", label: "BF Homes, Paranaque City" }
+                
+            ]
+        },
+        {
+            // id: 5
+            images: [
+                "LP 5/1.jpg",
+                "LP 5/2.jpg",
+                "LP 5/3.jpg",
+                "LP 5/4.jpg",
+                "LP 5/5.jpg",
+                "LP 5/6.jpg",
+                "LP 5/7.jpg",
+                "LP 5/8.jpg",
+                "LP 5/9.jpg",
+                "LP 5/10.jpg",
+            ],
+            title: "Duplex for sale in Las Piñas City, near Southville, McDo, and Las Piñas Doctors Hospital.",
+            price: "₱5,600,000",
+            description: "A well-maintained duplex in Las Piñas City featuring 3 bedrooms, 3 bathrooms, front and back terraces, a laundry area, and a 1-car garage. Located near Southville International School, McDonald's, and Las Piñas Doctors Hospital.",
+            features: [
+                { icon: "fas fa-bed", label: "3 Bedrooms" },
+                { icon: "fas fa-bath", label: "3 Bathrooms" },
+                { icon: "fas fa-water", label: "Front & Back Terraces" },
+                { icon: "fas fa-ship", label: "Laundry Area" },
+                { icon: "fas fa-utensils", label: "1 Car Garage" },
+                
+            ]
+        },
+        {
+           
+        }
+    ];
+
+    // Show property modal with dynamic content
+    function showPropertyModal(id) {
+        const data = propertyModalData[id - 1];
+        if (!data) return;
+
+        // Build images HTML
+        let imagesHtml = '';
+        data.images.forEach((img, i) => {
+            imagesHtml += `<img src="${img}" alt="${data.title} Image ${i+1}" loading="lazy" width="300" height="200">`;
+        });
+        // First image larger
+        imagesHtml = imagesHtml.replace('height="200"', 'height="200" style="grid-column:span 2;height:200px;"');
+
+        // Build features HTML
+        let featuresHtml = '';
+        data.features.forEach(f => {
+            featuresHtml += `<div class="feature-item"><i class="${f.icon}"></i><span>${f.label}</span></div>`;
+        });
+
+        // Set modal content
+        propertyModal.querySelector('.modal-images').innerHTML = imagesHtml;
+        propertyModal.querySelector('.modal-details h3').textContent = data.title;
+        propertyModal.querySelector('.modal-price').textContent = data.price;
+        propertyModal.querySelector('.modal-description').textContent = data.description;
+        propertyModal.querySelector('.feature-list').innerHTML = featuresHtml;
+
+        // Show modal
+        propertyModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Redirect to contact section when user clicks "Schedule Viewing" or "Contact Agent" in modal
+    function scheduleViewing(id) {
+        propertyModal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+        // Scroll to contact section after closing modal
+        setTimeout(() => {
+            window.location.hash = '#contact';
+            // Optionally, smooth scroll if supported
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 300);
+    }
+    function contactAgent() {
+        propertyModal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+        setTimeout(() => {
+            window.location.hash = '#contact';
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 300);
+    }
+    </script>
+   
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch for personalized real estate assistance</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Office Address</h4>
+                            <p>179 Aguirre Ave, Paranaque City, 1720 Metro Manila</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone Numbers</h4>
+                            <p>+63 916 489 3169 (Globe)</p>
+                            <p>+63 917 533 6984 (Globe)</p>
+                            
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email Address</h4>
+                            <p>
+                                <a href="mailto:vilma_tarra@yahoo.com">vilma_tarra@yahoo.com</a> |
+                                <a href="mailto:camachomichelleangela@gmail.com">camachomichelleangela@gmail.com</a>
+                               
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Business Hours</h4>
+                            <p>Monday to Saturday: 8:00 AM - 5:00 PM</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <div style="width:100%;overflow:auto;">
+                        <iframe 
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeflnnYFaG8WDr8jsIoxbCxvm9iZKyvAZ-wo-UmRpA0v8ow5Q/viewform?embedded=true" 
+                            width="100%" 
+                            height="700" 
+                            style="min-width:280px;max-width:100%;border:none;"
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0"
+                            allowfullscreen
+                        >Loading…</iframe>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+    <!-- Property Modal -->
+    <div class="modal" id="propertyModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div class="modal-property">
+                <div class="modal-images">
+                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Modern House - Living Room" loading="lazy" width="600" height="400">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Modern House - Kitchen" loading="lazy" width="300" height="200">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" alt="Modern House - Bedroom" loading="lazy" width="300" height="200">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" alt="Modern House - Garden" loading="lazy" width="300" height="200">
+                </div>
+                <div class="modal-details">
+                    <h3>Modern 3BR House</h3>
+                    <p class="modal-price">₱5,200,000</p>
+                    <p class="modal-description">
+                        This beautifully designed modern house in Quezon City features 3 spacious bedrooms, 2 bathrooms, and a landscaped garden. The open-plan living area flows seamlessly to the dining and kitchen spaces, perfect for family living. Located in a quiet neighborhood with easy access to major roads, schools, and shopping centers.
+                    </p>
+                    <div class="modal-features">
+                        <h4>Property Features</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Bedrooms</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-bath"></i>
+                                <span>2 Bathrooms</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>180 sqm Floor Area</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-car"></i>
+                                <span>2 Car Garage</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tree"></i>
+                                <span>Landscaped Garden</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>Modern Kitchen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn" onclick="scheduleViewing(1)">Schedule Viewing</button>
+                        <button class="btn btn-outline" onclick="contactAgent()">Contact Agent</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Tarra-Camacho Realty</h3>
+                    <p>Your trusted partner in Philippine real estate. We provide personalized service and expert guidance for all your property needs.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/viltarrabroker" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:vilma_tarra@yahoo.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#listings"><i class="fas fa-chevron-right"></i> Listings</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest property listings and market updates.</p>
+                    <form class="newsletter-form" id="newsletterForm" autocomplete="off">
+                        <input type="email" placeholder="Your Email Address" name="email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <div id="newsletterStatus" style="margin-top:0.7rem;font-size:0.97rem;"></div>
+                </div>
+                <script>
+                document.getElementById('newsletterForm').addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    const form = e.target;
+                    const statusDiv = document.getElementById('newsletterStatus');
+                    const btn = form.querySelector('button[type="submit"]');
+                    btn.disabled = true;
+                    btn.innerHTML = '<span class="spinner"></span> Subscribing...';
+                    const email = form.email.value.trim();
+                 
+                    try {
+                        const res = await fetch('https://formspree.io/a/122323232', {
+                            method: 'POST',
+                            headers: { 'Accept': 'application/json' },
+                            body: new FormData(form)
+                        });
+                        if (res.ok) {
+                            form.reset();
+                            statusDiv.style.color = "#27ae60";
+                            statusDiv.textContent = "Thank you for subscribing!";
+                        } else {
+                            statusDiv.style.color = "white";
+                            statusDiv.textContent = "News Letter Feature Coming Soon. Sorry for the inconvenience.";
+                        }
+                    } catch {
+                        statusDiv.style.color = "#e74c3c";
+                        statusDiv.textContent = "News Letter Feature Coming Soon. Sorry for the inconvenience.";
+                    }
+                    btn.disabled = false;
+                    btn.textContent = 'Subscribe';
+                });
+                </script>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Vilma Tarra Realty. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Floating Button & Panel -->
+    <div id="chatbot-fab" aria-label="Open chatbot" tabindex="0">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <div id="chatbot" aria-modal="true" role="dialog" aria-label="Real Estate Assistant">
+        <div id="chatbot-header">
+            <span><i class="fas fa-robot"></i> Real Estate Assistant</span>
+            <button id="chatbot-close" aria-label="Close chatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chatbot-messages" aria-live="polite">
+            <!-- Messages will be injected here -->
+        </div>
+        <form id="chatbot-input" autocomplete="off">
+            <input type="text" id="chatbot-user-input" placeholder="Type your question..." aria-label="Type your question" />
+            <button type="submit" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <!-- Powered by GitHub Copilot with gold icon -->
+        <div style="display:flex;align-items:center;justify-content:center;gap:0.5rem;margin:0.7rem 0 1rem 0;font-size:0.97rem;">
+            <span style="color:#C2A776;font-weight:600;">Chatbot Powered by</span>
+            <i class="fab fa-github" style="color:#C2A776;font-size:1.5rem;vertical-align:middle;"></i>
+            <span style="color:#C2A776;font-weight:700;letter-spacing:0.01em;">GitHub Copilot</span>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <style>
+        /* Chatbot FAB and Panel Styles */
+        #chatbot-fab {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: var(--dark-color);
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 1100;
+            transition: background 0.2s;
+        }
+        #chatbot-fab:hover, #chatbot-fab:focus {
+            background: var(--primary-dark);
+            outline: none;
+        }
+        #chatbot {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 370px;
+            max-width: 95vw;
+            height: 520px;
+            max-height: 90vh;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(30px) scale(0.98);
+            transition: opacity 0.25s, transform 0.25s;
+            z-index: 1101;
+        }
+        #chatbot.visible {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0) scale(1);
+        }
+        #chatbot-header {
+            background: var(--dark-color);
+            color: var(--light-text);
+            padding: 1rem 1.25rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            font-size: 1.1rem;
+        }
+        #chatbot-header i.fas.fa-robot {
+            margin-right: 0.5rem;
+            color: var(--primary-color);
+        }
+        #chatbot-close {
+            background: none;
+            border: none;
+            color: var(--light-text);
+            font-size: 1.3rem;
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+        #chatbot-close:hover, #chatbot-close:focus {
+            background: #333;
+            outline: none;
+        }
+        #chatbot-messages {
+            flex: 1;
+            padding: 1.2rem 1rem 0.5rem 1rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            background: #f8f9fa;
+        }
+        .message {
+            max-width: 85%;
+            padding: 0.7rem 1rem;
+            border-radius: 1.2rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            word-break: break-word;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+        }
+        .user-message {
+            align-self: flex-end;
+            background: var(--primary-color);
+            color: var(--dark-color);
+            border-bottom-right-radius: 0.3rem;
+        }
+        .bot-message {
+            align-self: flex-start;
+            background: #fff;
+            color: var(--dark-color);
+            border-bottom-left-radius: 0.3rem;
+            border: 1px solid #eee;
+        }
+        .chatbot-options {
+            margin-top: 0.7rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .chatbot-option {
+            background: var(--primary-color);
+            color: var(--dark-color);
+            border: none;
+            border-radius: 1.2rem;
+            padding: 0.4rem 1.1rem;
+            font-size: 0.97rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .chatbot-option:hover, .chatbot-option:focus {
+            background: var(--primary-dark);
+            outline: none;
+        }
+        #chatbot-input {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #eee;
+            padding: 0.7rem 1rem;
+            background: #fff;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+        #chatbot-user-input {
+            flex: 1;
+            border: 1px solid #ddd;
+            border-radius: 2rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            outline: none;
+            margin-right: 0.5rem;
+            background: #f8f9fa;
+        }
+        #chatbot-input button {
+            background: var(--primary-color);
+            color: var(--dark-color);
+            border: none;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #chatbot-input button:hover, #chatbot-input button:focus {
+            background: var(--primary-dark);
+            outline: none;
+        }
+        /* --- Mobile improvements --- */
+        @media (max-width: 600px) {
+            #chatbot, #chatbot-fab {
+                right: 0.5rem;
+                bottom: 0.5rem;
+            }
+            #chatbot {
+                width: 98vw;
+                min-width: 0;
+                max-width: 98vw;
+                height: 80vh;
+                max-height: 80vh;
+                border-radius: 1rem 1rem 0 0;
+                left: 1vw;
+                right: 1vw;
+                bottom: 0;
+                top: auto;
+            }
+            #chatbot.visible {
+                opacity: 1;
+                pointer-events: all;
+                transform: translateY(0) scale(1);
+            }
+            #chatbot-header {
+                border-radius: 1rem 1rem 0 0;
+            }
+            #chatbot-input {
+                border-radius: 0 0 1rem 1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            #chatbot {
+                width: 100vw;
+                max-width: 100vw;
+                left: 0;
+                right: 0;
+                border-radius: 0;
+            }
+            #chatbot-header, #chatbot-input {
+                border-radius: 0;
+            }
+        }
+    </style>
+
+    <script>
+        // --- Chatbot UI Logic ---
+        const chatbotFab = document.getElementById('chatbot-fab');
+        const chatbot = document.getElementById('chatbot');
+        const chatbotClose = document.getElementById('chatbot-close');
+        const chatbotMessages = document.getElementById('chatbot-messages');
+        const chatbotInputForm = document.getElementById('chatbot-input');
+        const chatbotUserInput = document.getElementById('chatbot-user-input');
+
+        // Welcome message (polite)
+        function chatbotWelcome() {
+            addBotMessage(
+                `<b>Welcome to Tarra-Camacho Realty!</b><br>
+                <span style="font-size:1.05em;">😊 Thank you for visiting. I'm your friendly real estate assistant.<br>
+                How may I help you today?</span>`,
+                [
+                    { label: 'Browse Listings', value: 'listings' },
+                    { label: 'Search by Location', value: 'search-location' },
+                    { label: 'Contact Agent', value: 'contact' }
+                ]
+            );
+        }
+
+        // Add bot message with optional options
+        function addBotMessage(text, options) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message bot-message';
+            messageDiv.innerHTML = text;
+            if (options && Array.isArray(options)) {
+                const optionsDiv = document.createElement('div');
+                optionsDiv.className = 'chatbot-options';
+                options.forEach(opt => {
+                    const btn = document.createElement('button');
+                    btn.className = 'chatbot-option';
+                    btn.textContent = opt.label;
+                    btn.dataset.option = opt.value;
+                    optionsDiv.appendChild(btn);
+                });
+                messageDiv.appendChild(optionsDiv);
+            }
+            chatbotMessages.appendChild(messageDiv);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+
+        // Add user message
+        function addUserMessage(text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message user-message';
+            messageDiv.textContent = text;
+            chatbotMessages.appendChild(messageDiv);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+
+        // Option click handler
+        chatbotMessages.addEventListener('click', function(e) {
+            if (e.target.classList.contains('chatbot-option')) {
+                handleChatbotOption(e.target.dataset.option, e.target.textContent);
+            }
+        });
+
+        // Handle chatbot options and logic
+        function handleChatbotOption(option, label) {
+            addUserMessage(label);
+            setTimeout(() => {
+                switch(option) {
+                    case 'listings':
+                        addBotMessage(
+                            "Here are some quick links to our featured listings. Please let me know if you want more details about any property.",
+                            [
+                                { label: 'View All Listings', value: 'goto-listings' },
+                                { label: 'Search by Location', value: 'search-location' },
+                                { label: 'Back to Menu', value: 'main-menu' }
+                            ]
+                        );
+                        break;
+                    case 'goto-listings':
+                        addBotMessage('Redirecting you to our listings section. If you need help, just let me know!');
+                        setTimeout(() => {
+                            document.querySelector('a[href="#listings"]').click();
+                            setTimeout(() => {
+                                addBotMessage('Thank you! You may close this chatbot now to see the <b>Listings</b> section.');
+                            }, 800);
+                        }, 900);
+                        break;
+                    case 'search-location':
+                        addBotMessage(
+                            "Which location are you interested in? Please select below or type your preferred area.",
+                            [
+                                { label: 'Muntinlupa', value: 'loc-muntinlupa' },
+                                { label: 'Manila', value: 'loc-manila' },
+                                { label: 'Paranaque', value: 'loc-paranaque' },
+                                { label: 'Las Piñas', value: 'loc-laspinas' },
+                                { label: 'Other', value: 'loc-other' },
+                                { label: 'Back to Menu', value: 'main-menu' }
+                            ]
+                        );
+                        break;
+                    case 'loc-muntinlupa':
+                    case 'loc-manila':
+                    case 'loc-paranaque':
+                    case 'loc-laspinas':
+                        {
+                            const locMap = {
+                                'loc-muntinlupa': 'Muntinlupa City',
+                                'loc-manila': 'Manila',
+                                'loc-paranaque': 'Paranaque City',
+                                'loc-laspinas': 'Las Piñas City'
+                            };
+                            addBotMessage(
+                                `Showing properties in <b>${locMap[option]}</b>. If you want to see more, please click below.`,
+                                [
+                                    { label: 'View Listings', value: 'goto-listings' },
+                                    { label: 'Back', value: 'search-location' }
+                                ]
+                            );
+                        }
+                        break;
+                    case 'loc-other':
+                        addBotMessage('Please type your preferred location below 👇');
+                        break;
+                    case 'contact':
+                        addBotMessage(
+                            `You can reach our agents at <b>+63 917 533 6984</b> or <a href="mailto:vilma_tarra@yahoo.com">vilma_tarra@yahoo.com</a>.<br>Would you like to send a message now?`,
+                            [
+                                { label: 'Yes, open contact form', value: 'goto-contact' },
+                                { label: 'Back to Menu', value: 'main-menu' }
+                            ]
+                        );
+                        break;
+                    case 'goto-contact':
+                        addBotMessage('Opening contact section. We look forward to assisting you!');
+                        setTimeout(() => {
+                            document.querySelector('a[href="#contact"]').click();
+                            setTimeout(() => {
+                                addBotMessage('Thank you! You may close this chatbot now to see the <b>Contact</b> section.');
+                            }, 800);
+                        }, 900);
+                        break;
+                    case 'main-menu':
+                    default:
+                        chatbotWelcome();
+                }
+            }, 600);
+        }
+
+        // Handle free text input
+        chatbotInputForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const text = chatbotUserInput.value.trim();
+            if (!text) return;
+            addUserMessage(text);
+            chatbotUserInput.value = '';
+            setTimeout(() => {
+                // Simple keyword-based responses
+                const t = text.toLowerCase();
+                if (t.includes('contact') || t.includes('agent') || t.includes('email') || t.includes('phone')) {
+                    handleChatbotOption('contact', 'Contact Agent');
+                } else if (t.includes('listing') || t.includes('property') || t.includes('house') || t.includes('condo')) {
+                    handleChatbotOption('listings', 'Browse Listings');
+                } else if (t.includes('location') || t.includes('where') || t.match(/muntinlupa|manila|paranaque|las piñas|las pinas/i)) {
+                    handleChatbotOption('search-location', 'Search by Location');
+                } else if (t.includes('hour') || t.includes('open') || t.includes('close') || t.includes('time')) {
+                    addBotMessage(
+                        "Our business hours are:<br>Monday to Saturday: 8:00 AM - 5:00 PM<br>We will respond as soon as possible during these times.",
+                        [
+                            { label: 'Back to Menu', value: 'main-menu' }
+                        ]
+                    );
+                } else if (t.length < 4) {
+                    addBotMessage("Could you please provide more details? I'll do my best to assist you.");
+                } else {
+                    addBotMessage(
+                        "I'm here to help with property listings and more. Please select an option below:",
+                        [
+                            { label: 'Browse Listings', value: 'listings' },
+                            { label: 'Search by Location', value: 'search-location' },
+                            { label: 'Contact Agent', value: 'contact' }
+                        ]
+                    );
+                }
+            }, 700);
+        });
+
+        // Show chatbot FAB after delay
+        setTimeout(() => {
+            chatbotFab.style.display = 'flex';
+        }, 2000);
+
+        // Toggle chatbot open/close
+        chatbotFab.addEventListener('click', function () {
+            chatbot.classList.add('visible');
+            chatbotUserInput.focus();
+        });
+        chatbotFab.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                chatbot.classList.add('visible');
+                chatbotUserInput.focus();
+            }
+        });
+        chatbotClose.addEventListener('click', function () {
+            chatbot.classList.remove('visible');
+            chatbotFab.focus();
+        });
+
+        // Show welcome message immediately on page load in the chatbot panel
+        document.addEventListener('DOMContentLoaded', function() {
+            chatbotWelcome();
+        });
+
+        // --- Rest of your UI scripts (back to top, modal, etc) ---
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Property Modal
+        const propertyModal = document.getElementById('propertyModal');
+        const modalClose = document.getElementById('modalClose');
+        // Do not redefine showPropertyModal here; use the dynamic one above
+
+        modalClose.addEventListener('click', () => {
+            propertyModal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        });
+        window.addEventListener('click', (e) => {
+            if (e.target === propertyModal) {
+                propertyModal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && propertyModal.classList.contains('show')) {
+                propertyModal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Animate elements when they come into view
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.card, .service-card, .about-img, .about-content, .contact-info, .contact-form');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeIn 1s ease forwards';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            elements.forEach(element => observer.observe(element));
+        };
+        window.addEventListener('load', animateOnScroll);
+
+        // Contact form UX
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
+            setTimeout(() => {
+                submitBtn.textContent = 'Message Sent!';
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    e.target.reset();
+                }, 2000);
+            }, 1500);
+        });
+    </script>
+
+    <script>
+        // Initialize Font Awesome icons
+        // Prevent common shortcuts for viewing source (F12, Ctrl+U, Ctrl+S, Ctrl+Shift+I, etc.)
+        document.addEventListener('keydown', function(e) {
+            // F12
+            if (e.key === 'F12') {
+            e.preventDefault();
+            showGoldenPopup();
+            return false;
+            }
+            // Ctrl+Shift+I or Ctrl+Shift+J or Ctrl+Shift+C
+            if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+            e.preventDefault();
+            showGoldenPopup();
+            return false;
+            }
+            // Ctrl+U or Ctrl+S
+            if (e.ctrlKey && ['U', 'S'].includes(e.key.toUpperCase())) {
+            e.preventDefault();
+            showGoldenPopup();
+            return false;
+            }
+        });
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            showGoldenPopup();
+        });
+
+        // Golden popup logic
+        function showGoldenPopup() {
+            let popup = document.getElementById('goldenPopup');
+            if (!popup) {
+            popup = document.createElement('div');
+            popup.id = 'goldenPopup';
+            popup.innerHTML = `
+                <div class="golden-popup-modal">
+                <div class="golden-popup-icon"><i class="fas fa-lock"></i></div>
+                <div class="golden-popup-title">Action Not Allowed</div>
+                <div class="golden-popup-desc">Sorry, viewing or copying the source code is disabled on this site.</div>
+                <button id="goldenPopupBtn" class="btn" style="min-width:120px;">OK</button>
+                </div>
+            `;
+            document.body.appendChild(popup);
+            document.getElementById('goldenPopupBtn').onclick = closeGoldenPopup;
+            popup.addEventListener('click', function(e) {
+                if (e.target === popup) closeGoldenPopup();
+            });
+            document.addEventListener('keydown', function escHandler(e) {
+                if (e.key === 'Escape' && popup.style.display === 'flex') {
+                closeGoldenPopup();
+                }
+            });
+            }
+            popup.style.display = 'flex';
+            setTimeout(() => {
+            document.getElementById('goldenPopupBtn').focus();
+            }, 200);
+        }
+        function closeGoldenPopup() {
+            const popup = document.getElementById('goldenPopup');
+            if (popup) popup.style.display = 'none';
+        }
+        // Golden popup styles
+        (function() {
+            if (document.getElementById('goldenPopupStyle')) return;
+            const style = document.createElement('style');
+            style.id = 'goldenPopupStyle';
+            style.innerHTML = `
+            #goldenPopup {
+                position: fixed;
+                z-index: 99999;
+                left: 0; top: 0;
+                width: 100vw; height: 100vh;
+                background: rgba(194,167,118,0.18);
+                display: none;
+                align-items: center;
+                justify-content: center;
+            }
+            .golden-popup-modal {
+                background: linear-gradient(120deg,#fffbe9 80%,#c2a77622 100%);
+                border: 2.5px solid #C2A776;
+                border-radius: 1.2rem;
+                box-shadow: 0 8px 32px #c2a77655;
+                padding: 2.2rem 2.5rem 2rem 2.5rem;
+                max-width: 95vw;
+                width: 100%;
+                max-width: 400px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                animation: fadeInUp 0.4s;
+            }
+            .golden-popup-icon {
+                font-size: 2.5rem;
+                color: #C2A776;
+                margin-bottom: 1rem;
+            }
+            .golden-popup-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 0.7rem;
+                color: #C2A776;
+            }
+            .golden-popup-desc {
+                font-size: 1.05rem;
+                color: #444;
+                margin-bottom: 1.3rem;
+            }
+            @media (max-width: 600px) {
+                .golden-popup-modal {
+                padding: 1.2rem 0.7rem 1rem 0.7rem;
+                max-width: 98vw;
+                }
+                .golden-popup-title {
+                font-size: 1.05rem;
+                }
+                .golden-popup-desc {
+                font-size: 0.98rem;
+                }
+            }
+            `;
+            document.head.appendChild(style);
+        })();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const icons = document.querySelectorAll('.fas, .fab');
+            icons.forEach(icon => {
+            icon.classList.add('fa-initialized');
+            });
+        });
+    </script>
+</body>
+</html>
