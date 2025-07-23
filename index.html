@@ -1387,202 +1387,199 @@
             </div>
         </div>
     </section>
-    <script>
-    // Property modal data for each listing
-    const propertyModalData = [
-        {
-            // id: 1
-            images: [
-                "CDO 1/1.jpg",
-                "CDO 1/2.jpg",
-                "CDO 1/3.jpg",
-                "CDO 1/4.jpg",
-                "CDO 1/5.jpg",
-                "CDO 1/6.jpg",
-                "CDO 1/7.jpg",
-                "CDO 1/8.jpg",
-                "CDO 1/9.jpg",
-                "CDO 1/10.jpg",
-                "CDO 1/11.jpg",
-                "CDO 1/12.jpg",
-                "CDO 1/13.jpg",
+<script>
+// Property modal data for each listing
+const propertyModalData = [
+    {
+        // id: 1
+        images: [
+            "CDO 1/1.jpg",
+            "CDO 1/2.jpg",
+            "CDO 1/3.jpg",
+            "CDO 1/4.jpg",
+            "CDO 1/5.jpg",
+            "CDO 1/6.jpg",
+            "CDO 1/7.jpg",
+            "CDO 1/8.jpg",
+            "CDO 1/9.jpg",
+            "CDO 1/10.jpg",
+            "CDO 1/11.jpg",
+            "CDO 1/12.jpg",
+            "CDO 1/13.jpg"
+        ],
+        title: "Spacious Condominium Unit For Rent",
+        price: "₱48,000/month (Also For Sale)",
+        description: "This  2-units condominium (merged into one unit) in Muntinlupa City features 115 sqm of space, 3 spacious bedrooms, 4 bathrooms, a large living area, 6 air conditioning units, and includes parking.",
+        features: [
+            { icon: "fas fa-bed", label: "3 Big Bedrooms" },
+            { icon: "fas fa-bath", label: "4 Toilet & Bathrooms" },
+            { icon: "fas fa-ruler-combined", label: "115 sqm Floor Area" },
+            { icon: "fas fa-car", label: "With Parking Included" },
+            { icon: "fas fa-tree", label: "With 6 Aircon Units" },
+            { icon: "fas fa-couch", label: "Spacious Living Room" },
+            { icon: "fas fa-map-marker-alt", label: "Centropolis Communities, Muntinlupa City" }
+        ]
+    },
+    {
+        // id: 2
+        images: [
+            "HMA 2/1.jpg", "HMA 2/2.jpg"
+        ],
+        title: "Property For Sale In Manila (Sold Only As A Lot)",
+        price: "₱28,000,000 (Negotiable)",
+        description: "Property for sale in Manila, sold as lot only. Ideal for residential or commercial use. Located in Onyx Sta Ana, Manila, this property spans 325 sqm with two titles of 162.50 sqm each. Perfect for building for commercial or residential purposes.",
+        features: [
+            { icon: "fas fa-ruler-combined", label: "325 sqm" },
+            { icon: "fas fa-file-alt", label: "2 Titles of 162.50 sqm each" },
+            { icon: "fas fa-building", label: "Ideal for Residential or Commercial Use" },
+            { icon: "fas fa-map-marker-alt", label: "Onyx Sta Ana, Manila" },
+            { icon: "fas fa-key", label: "Sold Only As A Lot" },
+            { icon: "fas fa-handshake", label: "Negotiable Price" }
+        ]
+    },
+    {
+        // id: 3
+        images: [
+            "THA 3/1.jpg",
+            "THA 3/2.jpg",
+            "THA 3/3.jpg",
+            "THA 3/4.jpg",
+            "THA 3/5.jpg",
+            "THA 3/6.jpg",
+            "THA 3/7.jpg",
+            "THA 3/8.jpg",
+            "THA 3/9.jpg"
+        ],
+        title: "Two Storey House for Sale in Tahanan Village, BF Paranaque",
+        price: "₱26,000,000 (Negotiable)",
+        description: "This spacious home features a ground floor bedroom with its own toilet and bath, three upstairs bedrooms each with own toilet and bath, an open den, maid’s and driver’s rooms both with their own toilets and baths, and covered parking for two cars.",
+        features: [
+            { icon: "fas fa-bed", label: "1 Bedroom with Own Toilet & Bath Downstairs" },
+            { icon: "fas fa-bed", label: "3 Bedrooms with Own Toilet & Bath Upstairs" },
+            { icon: "fas fa-door-open", label: "Open Den" },
+            { icon: "fas fa-user", label: "Maid’s Room with Toilet & Bath" },
+            { icon: "fas fa-user-tie", label: "Driver’s Room with Toilet & Bath" },
+            { icon: "fas fa-car", label: "2 Car Parking" }
+        ]
+    },
+    {
+        // id: 4
+        images: [
+            "BFA 4/1.jpg",
+            "BFA 4/2.jpg",
+            "BFA 4/3.jpg",
+            "BFA 4/4.jpg",
+            "BFA 4/5.jpg",
+            "BFA 4/6.jpg",
+            "BFA 4/7.jpg",
+            "BFA 4/8.jpg",
+            "BFA 4/9.jpg",
+            "BFA 4/10.jpg",
+            "BFA 4/11.jpg",
+            "BFA 4/12.jpg",
+            "BFA 4/13.jpg"
+        ],
+        title: "Three Story Corner House in BF Homes, Paranaque City",
+        price: "₱95,000/month",
+        description: "Three-storey corner house located in BF Homes, Parañaque City with 6 bedrooms, 5 toilets and baths, a den, and 1 powder room. It also has a spacious garage that can fit 2 or more cars.",
+        features: [
+            { icon: "fas fa-bed", label: "6 Bedrooms" },
+            { icon: "fas fa-bath", label: "5 Toilet & Bath" },
+            { icon: "fas fa-city", label: "1 Powder Room" },
+            { icon: "fas fa-dumbbell", label: "2 Car Garage or More Can Fit In The Garage" },
+            { icon: "fas fa-home", label: "Three Story Corner House" },
+            { icon: "fas fa-map-marker-alt", label: "BF Homes, Paranaque City" }
+        ]
+    },
+    {
+        // id: 5
+        images: [
+            "LP 5/1.jpg",
+            "LP 5/2.jpg",
+            "LP 5/3.jpg",
+            "LP 5/4.jpg",
+            "LP 5/5.jpg",
+            "LP 5/6.jpg",
+            "LP 5/7.jpg",
+            "LP 5/8.jpg",
+            "LP 5/9.jpg",
+            "LP 5/10.jpg"
+        ],
+        title: "Duplex for sale in Las Piñas City, near Southville, McDo, and Las Piñas Doctors Hospital.",
+        price: "₱5,600,000",
+        description: "A well-maintained duplex in Las Piñas City featuring 3 bedrooms, 3 bathrooms, front and back terraces, a laundry area, and a 1-car garage. Located near Southville International School, McDonald's, and Las Piñas Doctors Hospital.",
+        features: [
+            { icon: "fas fa-bed", label: "3 Bedrooms" },
+            { icon: "fas fa-bath", label: "3 Bathrooms" },
+            { icon: "fas fa-water", label: "Front & Back Terraces" },
+            { icon: "fas fa-ship", label: "Laundry Area" },
+            { icon: "fas fa-utensils", label: "1 Car Garage" }
+        ]
+    }
+];
 
-            ],
-            title: "Spacious Condominium Unit For Rent",
-            price: "₱48,000/month (Also For Sale)",
-            description: "This  2-units condominium (merged into one unit) in Muntinlupa City features 115 sqm of space, 3 spacious bedrooms, 4 bathrooms, a large living area, 6 air conditioning units, and includes parking.",
-            features: [
-                { icon: "fas fa-bed", label: "3 Big Bedrooms" },
-                { icon: "fas fa-bath", label: "4 Toilet & Bathrooms" },
-                { icon: "fas fa-ruler-combined", label: "115 sqm Floor Area" },
-                { icon: "fas fa-car", label: "With Parking Included" },
-                { icon: "fas fa-tree", label: "With 6 Aircon Units" },
-                { icon: "fas fa-couch", label: "Spacious Living Room" },
-                { icon: "fas fa-map-marker-alt", label: "Centropolis Communities, Muntinlupa City" }
-            ]
-        },
-        {
-            // id: 2
-images: [
-    "HMA 2/1.jpg","HMA 2/2.jpg"
-],
-            title: "Property For Sale In Manila (Sold Only As A Lot)",
-            price: "₱28,000,000 (Negotiable)",
-            description: "Property for sale in Manila, sold as lot only. Ideal for residential or commercial use. Located in Onyx Sta Ana, Manila, this property spans 325 sqm with two titles of 162.50 sqm each. Perfect for building for commercial or residential purposes.",
+// Show property modal with dynamic content and zoomable images
+function showPropertyModal(id) {
+    const data = propertyModalData[id - 1];
+    if (!data) return;
 
-            features: [
-                { icon: "fas fa-ruler-combined", label: "325 sqm" },
-                { icon: "fas fa-file-alt", label: "2 Titles of 162.50 sqm each" },
-                { icon: "fas fa-building", label: "Ideal for Residential or Commercial Use" },
-                { icon: "fas fa-map-marker-alt", label: "Onyx Sta Ana, Manila" },
-                { icon: "fas fa-key", label: "Sold Only As A Lot" },
-                { icon: "fas fa-handshake", label: "Negotiable Price" }
-             
-            ]
-        },
-        {
-            // id: 3
-            images: [
-                "THA 3/1.jpg",
-                "THA 3/2.jpg",
-                "THA 3/3.jpg",
-                "THA 3/4.jpg",
-                "THA 3/5.jpg",
-                "THA 3/6.jpg",
-                "THA 3/7.jpg",
-                "THA 3/8.jpg",
-                "THA 3/9.jpg",
-            ],
-            title: "Two Storey House for Sale in Tahanan Village, BF Paranaque",
-            price: "₱26,000,000 (Negotiable)",
-            description: "This spacious home features a ground floor bedroom with its own toilet and bath, three upstairs bedrooms each with own toilet and bath, an open den, maid’s and driver’s rooms both with their own toilets and baths, and covered parking for two cars.",
-            features: [
-                { icon: "fas fa-bed", label: "1 Bedroom with Own Toilet & Bath Downstairs" },
-                { icon: "fas fa-bed", label: "3 Bedrooms with Own Toilet & Bath Upstairs" },
-                { icon: "fas fa-door-open", label: "Open Den" },
-                { icon: "fas fa-user", label: "Maid’s Room with Toilet & Bath" },
-                { icon: "fas fa-user-tie", label: "Driver’s Room with Toilet & Bath" },
-                { icon: "fas fa-car", label: "2 Car Parking" }
-            ]
-        },
-        {
-            // id: 4
-            images: [
-                "BFA 4/1.jpg",
-                "BFA 4/2.jpg",
-                "BFA 4/3.jpg",
-                "BFA 4/4.jpg",
-                "BFA 4/5.jpg",
-                "BFA 4/6.jpg",
-                "BFA 4/7.jpg",
-                "BFA 4/8.jpg",
-                "BFA 4/9.jpg",
-                "BFA 4/10.jpg",
-                "BFA 4/11.jpg",
-                "BFA 4/12.jpg",
-                "BFA 4/13.jpg"
-            ],
-            title: "Three Story Corner House in BF Homes, Paranaque City",
-            price: "₱95,000/month",
-            description: "Three-storey corner house located in BF Homes, Parañaque City with 6 bedrooms, 5 toilets and baths, a den, and 1 powder room. It also has a spacious garage that can fit 2 or more cars.",
-            features: [
-                { icon: "fas fa-bed", label: "6 Bedrooms" },
-                { icon: "fas fa-bath", label: "5 Toilet & Bath" },
-                { icon: "fas fa-city", label: "1 Powder Room" },
-                { icon: "fas fa-dumbbell", label: "2 Car Garage or More Can Fit In The Garage" },
-                { icon: "fas fa-home", label: "Three Story Corner House" },
-                { icon: "fas fa-map-marker-alt", label: "BF Homes, Paranaque City" }
-                
-            ]
-        },
-        {
-            // id: 5
-            images: [
-                "LP 5/1.jpg",
-                "LP 5/2.jpg",
-                "LP 5/3.jpg",
-                "LP 5/4.jpg",
-                "LP 5/5.jpg",
-                "LP 5/6.jpg",
-                "LP 5/7.jpg",
-                "LP 5/8.jpg",
-                "LP 5/9.jpg",
-                "LP 5/10.jpg",
-            ],
-            title: "Duplex for sale in Las Piñas City, near Southville, McDo, and Las Piñas Doctors Hospital.",
-            price: "₱5,600,000",
-            description: "A well-maintained duplex in Las Piñas City featuring 3 bedrooms, 3 bathrooms, front and back terraces, a laundry area, and a 1-car garage. Located near Southville International School, McDonald's, and Las Piñas Doctors Hospital.",
-            features: [
-                { icon: "fas fa-bed", label: "3 Bedrooms" },
-                { icon: "fas fa-bath", label: "3 Bathrooms" },
-                { icon: "fas fa-water", label: "Front & Back Terraces" },
-                { icon: "fas fa-ship", label: "Laundry Area" },
-                { icon: "fas fa-utensils", label: "1 Car Garage" },
-                
-            ]
-        },
-        {
-           
+    // Build images HTML with Lightbox for all properties
+    let imagesHtml = '';
+    const group = 'property-modal-group-' + id;
+    data.images.forEach((img, i) => {
+        if (i === 0) {
+            imagesHtml += `<a href="${img}" data-lightbox="${group}" data-title="${data.title}"><img src="${img}" alt="${data.title} Image ${i+1}" loading="lazy" width="300" height="200" style="grid-column:span 2;height:200px;"></a>`;
+        } else {
+            imagesHtml += `<a href="${img}" data-lightbox="${group}" data-title="${data.title}"><img src="${img}" alt="${data.title} Image ${i+1}" loading="lazy" width="300" height="200"></a>`;
         }
-    ];
+    });
 
-    // Show property modal with dynamic content
-    function showPropertyModal(id) {
-        const data = propertyModalData[id - 1];
-        if (!data) return;
+    // Build features HTML
+    let featuresHtml = '';
+    data.features.forEach(f => {
+        featuresHtml += `<div class="feature-item"><i class="${f.icon}"></i><span>${f.label}</span></div>`;
+    });
 
-        // Build images HTML
-        let imagesHtml = '';
-        data.images.forEach((img, i) => {
-            imagesHtml += `<img src="${img}" alt="${data.title} Image ${i+1}" loading="lazy" width="300" height="200">`;
-        });
-        // First image larger
-        imagesHtml = imagesHtml.replace('height="200"', 'height="200" style="grid-column:span 2;height:200px;"');
+    // Set modal content
+    propertyModal.querySelector('.modal-images').innerHTML = imagesHtml;
+    propertyModal.querySelector('.modal-details h3').textContent = data.title;
+    propertyModal.querySelector('.modal-price').textContent = data.price;
+    propertyModal.querySelector('.modal-description').textContent = data.description;
+    propertyModal.querySelector('.feature-list').innerHTML = featuresHtml;
 
-        // Build features HTML
-        let featuresHtml = '';
-        data.features.forEach(f => {
-            featuresHtml += `<div class="feature-item"><i class="${f.icon}"></i><span>${f.label}</span></div>`;
-        });
+    // Show modal
+    propertyModal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+}
 
-        // Set modal content
-        propertyModal.querySelector('.modal-images').innerHTML = imagesHtml;
-        propertyModal.querySelector('.modal-details h3').textContent = data.title;
-        propertyModal.querySelector('.modal-price').textContent = data.price;
-        propertyModal.querySelector('.modal-description').textContent = data.description;
-        propertyModal.querySelector('.feature-list').innerHTML = featuresHtml;
-
-        // Show modal
-        propertyModal.classList.add('show');
-        document.body.style.overflow = 'hidden';
-    }
-
-    // Redirect to contact section when user clicks "Schedule Viewing" or "Contact Agent" in modal
-    function scheduleViewing(id) {
-        propertyModal.classList.remove('show');
-        document.body.style.overflow = 'auto';
-        // Scroll to contact section after closing modal
-        setTimeout(() => {
-            window.location.hash = '#contact';
-            // Optionally, smooth scroll if supported
-            const contactSection = document.getElementById('contact');
-            if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }, 300);
-    }
-    function contactAgent() {
-        propertyModal.classList.remove('show');
-        document.body.style.overflow = 'auto';
-        setTimeout(() => {
-            window.location.hash = '#contact';
-            const contactSection = document.getElementById('contact');
-            if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }, 300);
-    }
-    </script>
+// Redirect to contact section when user clicks "Schedule Viewing" or "Contact Agent" in modal
+function scheduleViewing(id) {
+    propertyModal.classList.remove('show');
+    document.body.style.overflow = 'auto';
+    // Scroll to contact section after closing modal
+    setTimeout(() => {
+        window.location.hash = '#contact';
+        // Optionally, smooth scroll if supported
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }, 300);
+}
+function contactAgent() {
+    propertyModal.classList.remove('show');
+    document.body.style.overflow = 'auto';
+    setTimeout(() => {
+        window.location.hash = '#contact';
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }, 300);
+}
+</script>
+<!-- Lightbox2 JS for zoom functionality -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
    
     <!-- Contact Section -->
     <section class="section contact-section" id="contact">
