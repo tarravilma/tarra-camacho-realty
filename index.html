@@ -1282,9 +1282,13 @@
         </div>
     </section>
 
-    <!-- Messenger Chat plugin Code -->
+   <!-- Messenger Chat plugin Code -->
 <div id="fb-root"></div>
-<div id="fb-customer-chat" class="fb-customerchat"></div>
+<div id="fb-customer-chat" class="fb-customerchat"
+     page_id="1797773873792664"
+     attribution="biz_inbox">
+</div>
+
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -1300,16 +1304,8 @@
     js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-
-  // Set chatbox attributes after SDK loads
-  document.addEventListener("DOMContentLoaded", function() {
-    var chatbox = document.getElementById('fb-customer-chat');
-    if (chatbox) {
-      chatbox.setAttribute("page_id", "1797773873792664"); // Replace with your published Facebook Page ID
-      chatbox.setAttribute("attribution", "biz_inbox");
-    }
-  });
 </script>
+
 
 <!-- Property modal data for each listing -->
 <script>
