@@ -1164,123 +1164,171 @@
         </div>
     </section>
 
-    <!-- Featured Listings -->
-    <section class="section" id="listings">
-        <div class="container">
-            <h2 class="section-title">Featured Listings</h2>
-            <p class="section-subtitle">Explore our selection of premium properties in prime locations across the Philippines</p>
-            <div class="properties-grid">
-                <!-- Card 1 -->
-                <div class="card" role="button" tabindex="0" aria-label="View details for Modern 3BR House" onclick="showPropertyModal(1)">
-                    <div class="card-img-container">
-                        <img src="CDO 1/1.jpg" alt="Modern House" loading="lazy" width="400" height="220">
-                        <span class="card-badge">For Rent</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Spacious Condominium Unit For Rent</h3>
-                        <span class="price">₱50,000 (Negotiable)</span>
-                        <p class="location">Centropolis Communities, Muntinlupa City • 115 sqm • 3 Big Bedrooms</p>
-                        <div class="card-features">
-                            <span><i class="fas fa-bath"></i> 4 Toilet & Bathrooms</span>
-                            <span><i class="fas fa-bed"></i> 3 Big Bedrooms</span>
-                            <span><i class="fas fa-couch"></i> Spacious Living Room</span>
-                            <span><i class="fas fa-car"></i> With Parking</span>
-                        </div>
-                        <div class="card-actions">
-                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(1)">View Details</button>
-                            
-                        </div>
-                    </div>
+   <!-- Featured Listings -->
+<section class="section" id="listings">
+    <div class="container">
+        <h2 class="section-title">Featured Listings</h2>
+        <p class="section-subtitle">Explore our selection of premium properties in prime locations across the Philippines</p>
+        
+        <div class="properties-grid">
+            <!-- Card 1 -->
+            <div class="card" role="button" tabindex="0" aria-label="View details for Modern 3BR House" onclick="showPropertyModal(1)">
+                <div class="card-img-container">
+                    <img src="CDO 1/1.jpg" alt="Modern House" loading="lazy" width="400" height="220">
+                    <span class="card-badge">For Rent</span>
                 </div>
-                <!-- Card 2 -->
-                <div class="card" role="button" tabindex="0" aria-label="View details for Elegant Family Villa" onclick="showPropertyModal(2)">
-                    <div class="card-img-container">
-                        <img src="HMA 2/1.jpg" alt="HMA" loading="lazy" width="400" height="220">
-                        <span class="card-badge">For Sale</span>
+                <div class="card-content">
+                    <h3>Spacious Condominium Unit For Rent</h3>
+                    <span class="price">₱50,000 (Negotiable)</span>
+                    <p class="location">Centropolis Communities, Muntinlupa City • 115 sqm • 3 Big Bedrooms</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-bath"></i> 4 Toilet & Bathrooms</span>
+                        <span><i class="fas fa-bed"></i> 3 Big Bedrooms</span>
+                        <span><i class="fas fa-couch"></i> Spacious Living Room</span>
+                        <span><i class="fas fa-car"></i> With Parking</span>
                     </div>
-                    <div class="card-content">
-                        <h3>Property For Sale In Manila (Sold Only As A Lot)</h3>
-                        <span class="price">₱28,000,000 (Negotiable)</span>
-                        <p class="location">Onyx Sta Ana, Manila • 325sqm (2 titles- 162.50 sqm each)</p>
-                        <div class="card-features">
-                            
-                        </div>
-                        <div class="card-actions">
-                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(2)">View Details</button>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="card" role="button" tabindex="0" aria-label="View details for Luxury Mansion" onclick="showPropertyModal(3)">
-                    <div class="card-img-container">
-                        <img src="THA 3/1.jpg" alt="Tahanan" loading="lazy" width="400" height="220">
-                        <span class="card-badge">For Sale</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Two Storey House for Sale in Tahanan Village, BF Paranaque</h3>
-                        <span class="price">₱26,000,000 (Negotiable)</span>
-                        <p class="location">Tahanan Village, BF Paranaque • Lot area: 280 sqm • Floor area: 250sqm</p>
-                        <div class="card-features">
-                            <span><i class="fas fa-bed"></i> 1 Bedroom With Own Toilet & Bath Downstairs</span>
-                            <span><i class="fas fa-bed"></i> 3 Bedrooms With Own Toilet & Bath Upstairs</span>
-                            <span><i class="fas fa-door-open"></i> Open Den</span>
-                            <span><i class="fas fa-car"></i> 2 Car Parking</span>
-                        </div>
-                        <div class="card-actions">
-                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(3)">View Details</button>
-                          
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 (For Rent) -->
-                <div class="card" role="button" tabindex="0" aria-label="View details for Three Story Corner House" onclick="showPropertyModal(4)">
-                    <div class="card-img-container">
-                        <img src="BFA 4/1.jpg" alt="Condominium" loading="lazy" width="400" height="220">
-                        <span class="card-badge">For Rent</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Three Story Corner House in BF Homes, Paranaque City</h3>
-                        <span class="price">₱95,000/month</span>
-                        <p class="location">BF Homes, Paranaque City</p>
-                        <div class="card-features">
-                            <span><i class="fas fa-bed"></i> 6 Bedrooms</span>
-                            <span><i class="fas fa-bath"></i> 5 Toilet & Bath</span>
-                            <span><i class="fas fa-bed"></i> 1 Powder Room</span>
-                            <span><i class="fas fa-car"></i> 2 Car Garage or More Can Fit In The Garage</span>
-                        </div>
-                        <div class="card-actions">
-                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(4)">View Details</button>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 5 -->
-                <div class="card" role="button" tabindex="0" aria-label="View details for Beachfront Property" onclick="showPropertyModal(5)">
-                    <div class="card-img-container">
-                        <img src="LP 5/1.jpg" alt="Beach House" loading="lazy" width="400" height="220">
-                        <span class="card-badge">For Sale</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Duplex for sale in Las Piñas City, near Southville, McDo, and Las Piñas Doctors Hospital.</h3>
-                        <span class="price">₱5,600,000</span>
-                        <p class="location">Las Piñas City • Around 120 sqm Floor Area • Around 70 sqm Lot Area</p>
-                        <div class="card-features">
-                            <span><i class="fas fa-bed"></i> 3 Bedrooms </span>
-                            <span><i class="fas fa-bath"></i> 3 Bathrooms </span>
-                            <span><i class="fas fa-umbrella-beach"></i> Front & Back Terraces </span>
-                            <span><i class="fas fa-tshirt"></i> Laundry Area </span>
-                            <span><i class="fas fa-car"></i> 1 Car Garage </span>
-                        </div>
-                        <div class="card-actions">
-                            <button class="btn" onclick="event.stopPropagation(); showPropertyModal(5)">View Details</button>
-                           
-                        </div>
+                    <div class="card-actions">
+                        <button class="btn" onclick="event.stopPropagation(); showPropertyModal(1)">View Details</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+            <!-- Card 2 -->
+            <div class="card" role="button" tabindex="0" aria-label="View details for Elegant Family Villa" onclick="showPropertyModal(2)">
+                <div class="card-img-container">
+                    <img src="HMA 2/1.jpg" alt="HMA" loading="lazy" width="400" height="220">
+                    <span class="card-badge">For Sale</span>
+                </div>
+                <div class="card-content">
+                    <h3>Property For Sale In Manila (Sold Only As A Lot)</h3>
+                    <span class="price">₱28,000,000 (Negotiable)</span>
+                    <p class="location">Onyx Sta Ana, Manila • 325sqm (2 titles- 162.50 sqm each)</p>
+                    <div class="card-actions">
+                        <button class="btn" onclick="event.stopPropagation(); showPropertyModal(2)">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" role="button" tabindex="0" aria-label="View details for Luxury Mansion" onclick="showPropertyModal(3)">
+                <div class="card-img-container">
+                    <img src="THA 3/1.jpg" alt="Tahanan" loading="lazy" width="400" height="220">
+                    <span class="card-badge">For Sale</span>
+                </div>
+                <div class="card-content">
+                    <h3>Two Storey House for Sale in Tahanan Village, BF Paranaque</h3>
+                    <span class="price">₱26,000,000 (Negotiable)</span>
+                    <p class="location">Tahanan Village, BF Paranaque • Lot area: 280 sqm • Floor area: 250sqm</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-bed"></i> 1 Bedroom With Own Toilet & Bath Downstairs</span>
+                        <span><i class="fas fa-bed"></i> 3 Bedrooms With Own Toilet & Bath Upstairs</span>
+                        <span><i class="fas fa-door-open"></i> Open Den</span>
+                        <span><i class="fas fa-car"></i> 2 Car Parking</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn" onclick="event.stopPropagation(); showPropertyModal(3)">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card" role="button" tabindex="0" aria-label="View details for Three Story Corner House" onclick="showPropertyModal(4)">
+                <div class="card-img-container">
+                    <img src="BFA 4/1.jpg" alt="Condominium" loading="lazy" width="400" height="220">
+                    <span class="card-badge">For Rent</span>
+                </div>
+                <div class="card-content">
+                    <h3>Three Story Corner House in BF Homes, Paranaque City</h3>
+                    <span class="price">₱95,000/month</span>
+                    <p class="location">BF Homes, Paranaque City</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-bed"></i> 6 Bedrooms</span>
+                        <span><i class="fas fa-bath"></i> 5 Toilet & Bath</span>
+                        <span><i class="fas fa-bed"></i> 1 Powder Room</span>
+                        <span><i class="fas fa-car"></i> 2 Car Garage or More Can Fit In The Garage</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn" onclick="event.stopPropagation(); showPropertyModal(4)">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card" role="button" tabindex="0" aria-label="View details for Beachfront Property" onclick="showPropertyModal(5)">
+                <div class="card-img-container">
+                    <img src="LP 5/1.jpg" alt="Beach House" loading="lazy" width="400" height="220">
+                    <span class="card-badge">For Sale</span>
+                </div>
+                <div class="card-content">
+                    <h3>Duplex for sale in Las Piñas City, near Southville, McDo, and Las Piñas Doctors Hospital.</h3>
+                    <span class="price">₱5,600,000</span>
+                    <p class="location">Las Piñas City • Around 120 sqm Floor Area • Around 70 sqm Lot Area</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-bed"></i> 3 Bedrooms </span>
+                        <span><i class="fas fa-bath"></i> 3 Bathrooms </span>
+                        <span><i class="fas fa-umbrella-beach"></i> Front & Back Terraces </span>
+                        <span><i class="fas fa-tshirt"></i> Laundry Area </span>
+                        <span><i class="fas fa-car"></i> 1 Car Garage </span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn" onclick="event.stopPropagation(); showPropertyModal(5)">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card" role="button" tabindex="0" aria-label="View details for Beachfront Property" onclick="showPropertyModal(6)">
+                <div class="card-img-container">
+                    <img src="HBM 6/1.jpg" alt="Beach House" loading="lazy" width="400" height="220">
+                    <span class="card-badge">For Sale</span>
+                </div>
+                <div class="card-content">
+                    <h3>House for sale
+Hillsborough, Muninlupa City</h3>
+                    <span class="price">₱65,000,000</span>
+                    <p class="location">Hillsborough, Muninlupa City • 400 sqm Lot Area •300 sqm Floor Area</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-bed"></i> 4 Bedrooms with Own Toilet & Bath </span>
+                        <span><i class="fas fa-layer-group"></i> Attic with Powder Room </span>
+                        <span><i class="fas fa-door-open"></i> Den (Downstairs) with Powder Room </span>
+                        <span><i class="fas fa-user"></i> Maid’s Room with Own Toilet & Bath </span>
+                        <span><i class="fas fa-user-tie"></i> Driver’s Room with Own Toilet & Bath</span>
+                        <span><i class="fas fa-car"></i> 2-3 Car Garage </span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn" onclick="event.stopPropagation(); showPropertyModal(6)">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card" role="button" tabindex="0" aria-label="View details for Beachfront Property" onclick="showPropertyModal(7)">
+                <div class="card-img-container">
+                    <img src="SV 7/1.jpg" alt="Beach House" loading="lazy" width="400" height="220">
+                    <span class="card-badge">For Rent</span>
+                </div>
+                <div class="card-content">
+                    <h3>Three Storey House For Rent in Southville, Las Piñas City.</h3>
+                    <span class="price">₱150,000/month</span>
+                    <p class="location">Las Piñas City • Around 120 sqm Floor Area • Around 70 sqm Lot Area</p>
+                    <div class="card-features">
+                            <span><i class="fas fa-bed"></i> 4 Bedrooms with Own Toilet & Bath </span>
+                            <span><i class="fas fa-toilet"></i> Attic with Common Toilet & Bath </span>
+                            <span><i class="fas fa-couch"></i> Big Receiving Area </span>
+                            <span><i class="fas fa-user"></i> Maids Room With Toilet & Bathroom </span>
+                            <span><i class="fas fa-user-tie"></i> Drivers Room With Toilet & Bathroom </span>
+                            <span><i class="fas fa-car"></i> Parking can fit up to 4 cars </span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn" onclick="event.stopPropagation(); showPropertyModal(7)">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of properties-grid -->
+    </div> <!-- End of container -->
+</section>
+
 
    <!-- Messenger Chat plugin Code -->
 <div id="fb-root"></div>
@@ -1435,8 +1483,67 @@ const propertyModalData = [
             { icon: "fas fa-ship", label: "Laundry Area" },
             { icon: "fas fa-utensils", label: "1 Car Garage" }
         ]
-    }
+    },
+
+    {
+        // id: 6
+        images: [
+            "HBM 6/1.jpg",
+            "HBM 6/2.jpg",
+            "HBM 6/3.jpg",
+            "HBM 6/4.jpg",
+            "HBM 6/5.jpg",
+            "HBM 6/6.jpg",
+            "HBM 6/7.jpg",
+            "HBM 6/8.jpg",
+            "HBM 6/9.jpg",
+            "HBM 6/10.jpg"
+        ],
+        title: "House for sale in Hillsborough, Muntinlupa City",
+        price: "₱65,000,000",
+        description: "400 sqm lot, 300 sqm floor area. 4 bedrooms with own toilet and bath, attic with powder room, den and library with powder room downstairs, maid’s room and driver’s room both with own toilet and bath, 2–3 car garage.",
+        features: [
+            { icon: "fas fa-bed", label: "4 Bedrooms with Own Toilet & Bath" },
+            { icon: "fas fa-layer-group", label: "Attic with Powder Room" },
+            { icon: "fas fa-door-open", label: "Den (Downstairs) with Powder Room" },
+            { icon: "fas fa-user", label: "Maids Room with Own Toilet & Bath" },
+            { icon: "fas fa-user-tie", label: "Drivers Room with Own Toilet & Bath" },
+            { icon: "fas fa-car", label: "2-3 Car Garage" },
+            { icon: "fas fa-map-marker-alt", label: "Hillsborough, Muntinlupa City" }
+        ]
+    },
+
+      {
+    id: 7,
+    images: [
+      "SV 7/1.jpg",
+      "SV 7/2.jpg",
+      "SV 7/3.jpg",
+      "SV 7/4.jpg",
+      "SV 7/5.jpg",
+      "SV 7/6.jpg",
+      "SV 7/7.jpg",
+      "SV 7/8.jpg",
+      "SV 7/9.jpg",
+      "SV 7/10.jpg"
+    ],
+    title: "Three Storey House For Rent in Southville, Las Piñas City.",
+    price: "₱150,000/month",
+    description: "Spacious home with 4 ensuite bedrooms, a common attic bath, large receiving area, separate maid's and driver's quarters with their own bathrooms, and parking for up to 4 cars.",
+    features: [
+      { icon: "fas fa-bed", text: "4 Bedrooms with Own Toilet & Bath" },
+      { icon: "fas fa-toilet", text: "Attic with Common Toilet & Bath" },
+      { icon: "fas fa-couch", text: "Big Receiving Area" },
+      { icon: "fas fa-user", text: "Maids Room With Toilet & Bathroom" },
+      { icon: "fas fa-user-tie", text: "Drivers Room With Toilet & Bathroom" },
+      { icon: "fas fa-car", text: "Parking can fit up to 4 cars" },
+      { icon: "fas fa-map-marker-alt", text: "Southville, Las Piñas City" }
+    ]
+  }
 ];
+
+
+
 </script>
 
 <script>
@@ -1595,8 +1702,7 @@ function showGoldenPopup(msg) {
                             
                         </div>
                     </div>
-                </div>
-                <div class="contact-form">
+          <div class="contact-form">
                     <h3>Send Us a Message</h3>
                     <div style="width:100%;overflow:auto;">
                         <!-- Replace the src URL below with your actual JotForm embed link -->
@@ -1611,6 +1717,8 @@ function showGoldenPopup(msg) {
                             allowfullscreen
                         >Loading…</iframe>
                     </div>
+</div>
+
                 </div>
                 </div>
                 </div>
